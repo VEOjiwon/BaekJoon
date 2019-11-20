@@ -5,7 +5,8 @@
 개
 A*B
 A/B
-사칙연산 추가함
+사칙연산
+나머지
 
 '''
 
@@ -22,6 +23,7 @@ print('''|\_/|
 |"^"`    |
 ||_/=\\\\__|''')
 
+'''
 L = list(map(int, input().split()))
 
 print(L[0]+L[1])
@@ -29,3 +31,9 @@ print(L[0]-L[1])
 print(L[0]*L[1])
 print(int(L[0]/L[1]))
 print(L[0]%L[1])
+'''
+L = list(map(int, input().split()))
+print((L[0]+L[1])%L[2])
+print((L[0]%L[2]+L[1]%L[2])%L[2])
+print((L[0]*L[1])%L[2])
+print(((L[0]%L[2])*(L[1]%L[2]))%L[2])
