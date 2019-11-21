@@ -29,7 +29,7 @@ elif 60 <= score < 70:
 else:
     print("F")
 
-"""
+
 #3번(27533번) 윤년
 year = int(input())
 
@@ -37,3 +37,22 @@ if (year%4==0 and year%100!=0) or year%400 == 0:
     print(1)
 else:
     print(0)
+"""
+
+#4번(2884번) 알람시계
+h, m = input().split()
+h = int(h)
+m = int(m)
+
+if m-45<0:
+    if h-1<0:
+        sh=23
+        sm=m+15
+    else :
+        sh=h-1
+        sm=m+15
+else:
+    sh=h
+    sm=m-45
+
+print(sh, sm)
