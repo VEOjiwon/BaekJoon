@@ -14,7 +14,7 @@ elif a[0]<a[1] :
 else :
     print("==")
 
-"""
+
 #2번(9498번)
 score = int(input())
 
@@ -28,3 +28,12 @@ elif 60 <= score < 70:
     print("D")
 else:
     print("F")
+
+"""
+#3번(27533번) 윤년
+year = int(input())
+
+if (year%4==0 and year%100!=0) or year%400 == 0:
+    print(1)
+else:
+    print(0)
