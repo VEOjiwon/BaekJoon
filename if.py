@@ -37,7 +37,7 @@ if (year%4==0 and year%100!=0) or year%400 == 0:
     print(1)
 else:
     print(0)
-"""
+
 
 #4번(2884번) 알람시계
 h, m = input().split()
@@ -56,3 +56,11 @@ else:
     sm=m-45
 
 print(sh, sm)
+
+"""
+
+#4번 세 수 중 두번째로 큰 정수 출력
+a,b,c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
