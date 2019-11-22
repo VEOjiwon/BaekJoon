@@ -38,4 +38,3 @@ num = int(input())
 for i in range(0,num):
     L = list(map(int,sys.stdin.readline().rstrip().split()))
     print(L[0]+L[1])
-#L = list(map(int, input().split()))
