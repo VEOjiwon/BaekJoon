@@ -19,7 +19,7 @@ for i in range(0,num):
     print(a+b)
     
 ############################################################
-"""
+
 
 #3번 1부터 n까지 합 구하
 
@@ -28,3 +28,14 @@ output =0;
 for i in range(1,x+1):
     output=output+i
 print(output)
+
+############################################################
+
+"""
+import sys
+
+num = int(input())
+for i in range(0,num):
+    L = list(map(int,sys.stdin.readline().rstrip().split()))
+    print(L[0]+L[1])
+#L = list(map(int, input().split()))

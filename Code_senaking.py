@@ -11,3 +11,14 @@ a,b,c = input().split()
 a = int(a)
 b = int(b)
 c = int(c)
+
+#시간절약을 위한 인풋코드
+import sys
+
+# 2 4 5 같은 입력 한줄에 받기 str타입임
+sys.stdin.readline()
+
+sys.stdin.readline().rstrip()  # \n문자제거해줌
+
+# 2 4 5 같은 입력 한줄에 받아서 띄어쓰기 단위로 리스트에 집어넣기
+L = list(map(int,sys.stdin.readline().rstrip().split()))
