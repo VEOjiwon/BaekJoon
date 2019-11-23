@@ -69,10 +69,20 @@ for i in range(1,case+1):
 
 
 ###############################################
-"""
+
 #A+B-8
 import sys
 case = int(input())
 for i in range(1,case+1):
     L = list(map(int,sys.stdin.readline().rstrip().split()))
     print("Case #",i,": ",L[0]," + ",L[1]," = ",L[0]+L[1],sep="")
+    
+###############################################
+
+"""
+
+#별찍기 - 1
+count = int(input())
+
+for i in range(0,count):
+    print("*"*(i+1))
