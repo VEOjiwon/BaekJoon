@@ -29,13 +29,20 @@ for i in range(1,x+1):
     output=output+i
 print(output)
 
-이메일변경
+
 ############################################################
 
-"""
+
 import sys
 
 num = int(input())
 for i in range(0,num):
     L = list(map(int,sys.stdin.readline().rstrip().split()))
     print(L[0]+L[1])
+
+"""
+
+#n찍기
+x  = int(input())
+for i in range(1,x+1):
+    print(i)
