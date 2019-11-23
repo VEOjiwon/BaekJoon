@@ -79,10 +79,22 @@ for i in range(1,case+1):
     
 ###############################################
 
-"""
-
 #별찍기 - 1
 count = int(input())
 
 for i in range(0,count):
     print("*"*(i+1))
+
+################################################
+
+#별찍기 - 2
+count = int(input())
+tmp=count-1
+for i in range(0,count):
+    print(" "*tmp,end='',sep="")
+    print("*"*(i+1))
+    tmp=tmp-1
+
+###############################################
+
+"""
