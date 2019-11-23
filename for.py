@@ -58,7 +58,7 @@ for i in range(1,x+1):
     temp=temp-1
     
 ############################################################
-"""
+
 
 #A+B-7
 import sys
@@ -67,4 +67,12 @@ for i in range(1,case+1):
     L = list(map(int,sys.stdin.readline().rstrip().split()))
     print("Case #",i,": ",L[0]+L[1],sep="")
 
+
 ###############################################
+"""
+#A+B-8
+import sys
+case = int(input())
+for i in range(1,case+1):
+    L = list(map(int,sys.stdin.readline().rstrip().split()))
+    print("Case #",i,": ",L[0]," + ",L[1]," = ",L[0]+L[1],sep="")
