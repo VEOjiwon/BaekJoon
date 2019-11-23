@@ -26,8 +26,8 @@ L = list(map(int,sys.stdin.readline().rstrip().split()))
 #print , sep 옵션 (기본 -> 공백)
 print("Case #",":",L[0]+L[1],sep="")
 
-#별찍기 기본
-count = int(input())
+#프린트 옵션
+# print(" "*tmp,end='',sep="")    end =''은 \n 없애주는 용
 
-for i in range(0,count):
-    print("*"*(i+1)) #이 포맷팅 참고할 것
+#for문 옵션
+#for i in range(10,0,-1)           10부터 0까지 빼가면서 계산하겠다는 용
