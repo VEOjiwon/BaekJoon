@@ -40,9 +40,21 @@ for i in range(0,num):
     L = list(map(int,sys.stdin.readline().rstrip().split()))
     print(L[0]+L[1])
 
-"""
+############################################################
+
 
 #n찍기
 x  = int(input())
 for i in range(1,x+1):
     print(i)
+
+############################################################
+"""
+
+
+# 기찍 n
+x  = int(input())
+temp=x
+for i in range(1,x+1):
+    print(temp)
+    temp=temp-1
