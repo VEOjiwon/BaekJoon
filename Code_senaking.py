@@ -25,3 +25,9 @@ L = list(map(int,sys.stdin.readline().rstrip().split()))
 
 #print , sep 옵션 (기본 -> 공백)
 print("Case #",":",L[0]+L[1],sep="")
+
+#별찍기 기본
+count = int(input())
+
+for i in range(0,count):
+    print("*"*(i+1)) #이 포맷팅 참고할 것
