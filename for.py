@@ -49,8 +49,6 @@ for i in range(1,x+1):
     print(i)
 
 ############################################################
-"""
-
 
 # 기찍 n
 x  = int(input())
@@ -58,3 +56,15 @@ temp=x
 for i in range(1,x+1):
     print(temp)
     temp=temp-1
+    
+############################################################
+"""
+
+#A+B-7
+import sys
+case = int(input())
+for i in range(1,case+1):
+    L = list(map(int,sys.stdin.readline().rstrip().split()))
+    print("Case #",i,": ",L[0]+L[1],sep="")
+
+###############################################
