@@ -98,3 +98,14 @@ for i in range(0,count):
 ###############################################
 
 """
+#x보다 작은 수
+
+n,target= input().split()
+n = int(n)
+target = int(target)
+L = list(map(int, input().split()))
+count = 0
+
+for i in range(0,n):
+    if(L[i]<target):
+        print(L[i],"",end="")
