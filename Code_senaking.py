@@ -4,6 +4,8 @@
 """
 
 #1 12 와 같은 입력을 받는 코드
+
+
 L = list(map(int, input().split()))
 
 #띄어쓰기로 구분된 한줄의 여러입력 받고 int로 형 변환 (처음에 받을 때는 str임)
@@ -35,3 +37,18 @@ for i in range(10,0,-1)           #10부터 0까지 빼가면서 계산하겠다
 #if문 옵션
 if not l:         #l(list)가 비었는지 안비었는지 검사하는 용
 if seq:           #이거도 사용가능
+
+###################################
+
+#여러줄에 걸친 input 받는 법, 단 엔터 한번 더 입력해야 끝낼 수 있음
+from pip._vendor.distlib.compat import raw_input
+l = list()
+while True:
+    input_data = raw_input()
+    if input_data == '':
+        break
+    else:
+        l.append(input_data)
+print(l)
+
+
