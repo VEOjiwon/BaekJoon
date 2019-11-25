@@ -27,7 +27,11 @@ L = list(map(int,sys.stdin.readline().rstrip().split()))
 print("Case #",":",L[0]+L[1],sep="")
 
 #프린트 옵션
-# print(" "*tmp,end='',sep="")    end =''은 \n 없애주는 용
+print(" "*tmp,end='',sep="")    #end =''은 \n 없애주는 용
 
 #for문 옵션
-#for i in range(10,0,-1)           10부터 0까지 빼가면서 계산하겠다는 용
+for i in range(10,0,-1)           #10부터 0까지 빼가면서 계산하겠다는 용
+
+#if문 옵션
+if not l:         #l(list)가 비었는지 안비었는지 검사하는 용
+if seq:           #이거도 사용가능
