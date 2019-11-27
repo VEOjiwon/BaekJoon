@@ -80,7 +80,7 @@ for j in output:
     print(j)
 
 ###############################################33
-"""""
+
 #나머지 (서로다른 값 개수 구하기)
 import sys
 in_array = []
@@ -94,3 +94,22 @@ for i in range(0,10):
 
 t = list(set(Remainder))
 print(len(t))
+
+###############################################33
+"""""
+
+#평균조작하기
+
+lenof = int(input())
+l = list(map(int,sys.stdin.readline().rstrip().split()))
+max_num = max(l)
+new_l=list()
+tmp=0
+for i in l:
+    new_l.append(i/max_num*100)
+
+for i in new_l:
+    tmp+=i
+avr = tmp / len(new_l)
+
+print("%0.2f"%(avr))
