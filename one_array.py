@@ -81,6 +81,7 @@ for j in output:
 
 ###############################################33
 """""
+#나머지 (서로다른 값 개수 구하기)
 import sys
 in_array = []
 Remainder = []
@@ -91,3 +92,5 @@ for i in range(0,10):
     tmp = int(input())
     Remainder.append(tmp%42)
 
+t = list(set(Remainder))
+print(len(t))
