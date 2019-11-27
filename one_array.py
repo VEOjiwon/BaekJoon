@@ -115,7 +115,7 @@ avr = tmp / len(new_l)
 print("%0.2f"%(avr))
 
 ###############################################33
-"""""
+
 
 #ox퀴즈
 
@@ -137,3 +137,28 @@ for i in a:
     print(score)
     score = 0
     tmpcnt=0
+
+###############################################33
+"""""
+
+#평균은 넘겠지
+
+total_test_case = int(input())
+
+a = []
+sum = 0
+avg = 0
+cnt = 0
+for i in range(0, total_test_case):
+    a.append(input())
+    len_t = int(a[i].split()[0])
+    for j in range(1, len_t + 1):
+        sum += int(a[i].split()[j])
+    avg = sum / len_t
+    for j in range(1, len_t + 1):
+        if (int(a[i].split()[j]) > avg):
+            cnt += 1
+    print("%0.3f"%(cnt / len_t * 100), "%", sep='' )
+    avg = 0
+    sum = 0
+    cnt = 0
