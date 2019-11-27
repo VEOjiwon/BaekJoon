@@ -96,9 +96,9 @@ t = list(set(Remainder))
 print(len(t))
 
 ###############################################33
-"""""
 
-#평균조작하기
+
+#평균조작하기 
 
 lenof = int(input())
 l = list(map(int,sys.stdin.readline().rstrip().split()))
@@ -113,3 +113,27 @@ for i in new_l:
 avr = tmp / len(new_l)
 
 print("%0.2f"%(avr))
+
+###############################################33
+"""""
+
+#ox퀴즈
+
+test_case = int(input())
+a=[]
+for i in range(0,test_case):
+    a.append(input())
+tmpcnt = 0
+score=0
+for i in a:
+
+    for j in i:
+        if j == 'O':
+            tmpcnt+=1
+            score+=tmpcnt
+        else :
+            tmpcnt = 0
+
+    print(score)
+    score = 0
+    tmpcnt=0
