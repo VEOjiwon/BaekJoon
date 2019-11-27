@@ -63,7 +63,7 @@ else:
     print("mixed")
     
 ###############################################33
-"""""
+
 #숫자의 개수
 a = int(input())
 b = int(input())
@@ -78,3 +78,16 @@ for i in str(product):
 
 for j in output:
     print(j)
+
+###############################################33
+"""""
+import sys
+in_array = []
+Remainder = []
+
+fin_cnt=0
+for i in range(0,10):
+    tmp=0
+    tmp = int(input())
+    Remainder.append(tmp%42)
+
