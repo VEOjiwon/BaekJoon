@@ -40,7 +40,8 @@ for i in range(0,9):
         max = l[i]
     cnt+=1
 print(max, max_cnt,sep="\n")
-"""
+
+###############################################33
 
 #음계
 import sys
@@ -60,3 +61,20 @@ elif descnt==7:
     print("descending")
 else:
     print("mixed")
+    
+###############################################33
+"""""
+#숫자의 개수
+a = int(input())
+b = int(input())
+c = int(input())
+
+product = a*b*c
+output =[0,0,0,0,0,0,0,0,0,0]
+i=10
+
+for i in str(product):
+    output[int(i)]+=1
+
+for j in output:
+    print(j)
