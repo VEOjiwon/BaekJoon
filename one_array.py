@@ -138,8 +138,7 @@ for i in a:
     score = 0
     tmpcnt=0
 
-###############################################33
-"""""
+
 
 #평균은 넘겠지
 
@@ -162,3 +161,18 @@ for i in range(0, total_test_case):
     avg = 0
     sum = 0
     cnt = 0
+###############################################33
+"""""
+
+#평균은 넘겠지 ver. two
+
+total_test_case = int(input())
+
+for i in range(total_test_case):
+    l = list(map(int,sys.stdin.readline().split()))
+    avg = sum(l[1:])/l[0]
+    cnt=0
+    for j in l[1:]:
+        if j>avg:
+            cnt+=1
+    print("%0.3f%%"%(cnt/l[0]*100))
