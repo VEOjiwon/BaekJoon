@@ -14,3 +14,23 @@ solve = sum
 
 ######################################3
 """
+#셀프 넘버
+
+
+l=[]
+sums = 0
+for i in range(1,10000):
+    l.append(i)
+
+for i in range(1,10000):
+    sums=i
+    for j in str(i):
+        sums=sums+int(j)
+    try:
+        l.remove(int(sums))
+    except ValueError as e:
+        pass
+
+
+for i in l:
+    print(i)
