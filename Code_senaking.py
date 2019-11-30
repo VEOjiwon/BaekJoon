@@ -51,4 +51,7 @@ while True:
         l.append(input_data)
 print(l)
 
+#나누기 관련
+exxx = 13 // 4 # exxx= 3 이다.. 소수점 이하를 버려준다
+exxx2 = divmod(9,5) # exxx2 = (1,4)이다. 몫과 나머지 둘 다 구해준다.
 
