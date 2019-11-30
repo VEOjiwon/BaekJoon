@@ -7,7 +7,7 @@ target = input()
 print(ord(target))
 
 ################################
-"""
+
 
 #숫자의 합
 numbers = int(input())
@@ -17,3 +17,21 @@ for i in target:
     sum+=int(i)
 
 print(sum)
+
+################################
+"""
+
+#단어의 합
+from string import ascii_lowercase
+target = input()
+output =[-1 for i in range(26)]
+alpha = list(ascii_lowercase)
+
+for idx, val in enumerate(alpha):
+    tmp=target.find(val)
+    output[idx]=tmp
+
+out = ''
+for i in output:
+    out+=str(i)+' '
+print(out)
