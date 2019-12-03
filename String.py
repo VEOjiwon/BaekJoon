@@ -19,7 +19,7 @@ for i in target:
 print(sum)
 
 ################################
-"""
+
 
 #단어의 합
 from string import ascii_lowercase
@@ -35,3 +35,16 @@ out = ''
 for i in output:
     out+=str(i)+' '
 print(out)
+
+################################
+"""
+#문자열 반복
+testcase = int(input())
+for i in range(testcase):
+    a, b = input().split()
+    a = int(a)
+    c=''
+    for j in b:
+        c+=j*a
+    print(c)
+
