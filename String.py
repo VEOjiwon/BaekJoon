@@ -37,7 +37,7 @@ for i in output:
 print(out)
 
 ################################
-"""
+
 #문자열 반복
 testcase = int(input())
 for i in range(testcase):
@@ -47,4 +47,22 @@ for i in range(testcase):
     for j in b:
         c+=j*a
     print(c)
+################################
+"""
 
+#단어공부
+from string import ascii_uppercase
+target = input()
+target = target.upper()
+
+alpha = list(ascii_uppercase)
+out =''
+maxnum = 0
+for i in alpha:
+    if target.count(i)>maxnum :
+        maxnum = target.count(i)
+        out = i
+    elif maxnum >0 and maxnum == target.count(i):
+        out='?'
+
+print(out)
