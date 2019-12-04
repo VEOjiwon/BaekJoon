@@ -86,10 +86,7 @@ a,b = input().split()
 a=int(a[::-1])
 b=int(b[::-1])
 
-if a>b :
-    print(a)
-else :
-    print(b)
+print(max(a,b))
 
-
+# 한줄짜리 코드... print(max(input()[::-1].split()))
 
