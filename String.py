@@ -69,7 +69,6 @@ for i in alpha:
 print(out)
 
 ################################
-"""
 
 #단어의 개수
 target = input()
@@ -77,3 +76,20 @@ target = input()
 print(len(list(map(str,target.split()))))
 
 print(len(target.split()))
+
+################################
+"""
+
+#상수
+
+a,b = input().split()
+a=int(a[::-1])
+b=int(b[::-1])
+
+if a>b :
+    print(a)
+else :
+    print(b)
+
+
+
