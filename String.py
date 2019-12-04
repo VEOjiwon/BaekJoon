@@ -1,6 +1,7 @@
 """
 백준 문자열문제 모음
 """
+
 """
 #아스키코드 변환
 target = input()
@@ -48,7 +49,7 @@ for i in range(testcase):
         c+=j*a
     print(c)
 ################################
-"""
+
 
 #단어공부
 from string import ascii_uppercase
@@ -66,3 +67,13 @@ for i in alpha:
         out='?'
 
 print(out)
+
+################################
+"""
+
+#단어의 개수
+target = input()
+
+print(len(list(map(str,target.split()))))
+
+print(len(target.split()))
