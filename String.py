@@ -133,3 +133,22 @@ for i in c_alhpa:
 
 
 print(cnt)
+
+
+#그룹단어 체커
+
+numofcase = int(input())
+
+cnt=numofcase
+
+
+
+
+for i in range(numofcase):
+    a = input()
+    for alpha in a:
+        if a.count(alpha) != (a.rfind(alpha)-a.find(alpha)+1):
+            cnt-=1
+            break
+
+print(cnt)
