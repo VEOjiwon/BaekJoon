@@ -33,3 +33,21 @@ else :
         cnt = mod5//3 + m5
 
 print(cnt)
+
+# beehive
+
+target = int(input())
+
+t = 0
+su = 1
+cnt = 1
+
+while True:
+    if su >= target:
+        break
+    else:
+        t += 6
+        su += t
+        cnt += 1
+
+print(cnt)
