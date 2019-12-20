@@ -34,3 +34,33 @@ if len(l) == 0:
 else:
     print(sum(l))
     print(min(l))
+
+######################################################################
+#실패함.. 다시
+"""
+def is_prime(i):
+    if i==1:
+        return 0
+    for k in range(2,i):
+        if(i%k==0):
+            return 0
+
+    return 1
+"""
+m, n = input().split()
+
+m = int(m)
+n = int(n)
+
+# l = []
+cnt = 1
+for i in range(m, n + 1):
+    if i == 1:
+        continue
+    for k in range(2, i):
+        if (i % k == 0):
+            break
+    if k == i - 1:
+        print(i)
+
+
