@@ -63,4 +63,39 @@ for i in range(m, n + 1):
     if k == i - 1:
         print(i)
 
+################################################################################
+
+# prime problem #1929
+import math
+
+"""
+def is_prime(i):
+    i=math.sqrt(i)
+    if i==1:
+        return 0
+    for k in range(2,i+1):
+        if(i%k==0):
+            return 0
+
+    return 1
+"""
+m, n = input().split()
+
+m = int(m)
+n = int(n)
+tmp = int(math.sqrt(n))
+
+
+
+for i in range(m, n + 1):
+    t = 1
+    if i == 1:
+        continue
+    for k in range(2, int(math.sqrt(i)) + 1):
+        if (i % k == 0):
+            t = 0
+            break
+
+    if t == 1:
+        print(i)
 
